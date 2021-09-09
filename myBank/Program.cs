@@ -6,22 +6,15 @@ namespace myBank
     {
         static void Main(string[] args)
         {
-            ContaCorrente contaDaVirginia = new ContaCorrente();
-
-            contaDaVirginia.titular = "Barbara";
-            contaDaVirginia.agencia = 1234;
-            contaDaVirginia.conta = 789;
-            contaDaVirginia.saldo = 100.50;
+            ContaCorrente contaDaVirginia = new ContaCorrente("Virginia", 1234, 789, 100.50);
             
-            ContaCorrente contaDoMateus = new ContaCorrente();
+            ContaCorrente contaDoMateus = new ContaCorrente("Mateus", 1234, 790, 120);
 
-            contaDoMateus.titular = "Mateus";
-            contaDoMateus.agencia = 1234;
-            contaDoMateus.conta = 790;
-            contaDoMateus.saldo = 120;
+            ContaCorrente contaDoJonatan = new ContaCorrente("Jonatan", 5678, 312, 15234.89);
 
             Console.WriteLine("O titular da conta é: "+ contaDaVirginia.titular);
             Console.WriteLine("O titular da conta é: "+ contaDoMateus.titular);
+            Console.WriteLine("O titular da conta é: "+ contaDoJonatan.titular);
         }
     }
 }
