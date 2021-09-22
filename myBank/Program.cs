@@ -6,24 +6,21 @@ namespace myBank
     {
         static void Main(string[] args)
         {
-            ContaCorrente contaDaVirginia = new ContaCorrente("Virginia", 1234, 789, 100.50);
+            ContaCorrente contaDaVirginia = new ContaCorrente("Virginia", 1234, /* 789, */ 100.50);
             
-            ContaCorrente contaDoMateus = new ContaCorrente("Mateus", 1234, 790, 120);
+            ContaCorrente contaDoMateus = new ContaCorrente("Mateus", 1234, /* 790, */ 120);
 
-            ContaCorrente contaDoJonatan = new ContaCorrente("Jonatan", 5678, 312, 15234.89);
+            ContaCorrente contaDoJonatan = new ContaCorrente("Jonatan", 5678, /* 312, */ 15234.89);
             
-            bool retorno = contaDaVirginia.Sacar(50);
-            Console.WriteLine(retorno);
-            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.saldo);
+            contaDaVirginia.Sacar(50);
+            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.Saldo);
 
-            contaDaVirginia.Depositar(150);
+            /* contaDaVirginia.Depositar(100);
+            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.Saldo);
 
-            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.saldo);
-
-            contaDoJonatan.Transferir(200, contaDaVirginia);
-            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.saldo);
-            Console.WriteLine("O saldo da conta do Jonatan é: "+ contaDoJonatan.saldo);
-
+            contaDaVirginia.Transferir(150.5, contaDoMateus);
+            Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.Saldo);
+            Console.WriteLine("O saldo da conta do Mateus é: "+ contaDoMateus.Saldo); */
         }
     }
 }

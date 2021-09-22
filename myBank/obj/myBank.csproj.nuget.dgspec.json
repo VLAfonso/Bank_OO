@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\mybank\\myBank.csproj": {}
+    "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\myBank\\myBank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\mybank\\myBank.csproj": {
+    "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\myBank\\myBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\mybank\\myBank.csproj",
+        "projectUniqueName": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\myBank\\myBank.csproj",
         "projectName": "myBank",
-        "projectPath": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\mybank\\myBank.csproj",
+        "projectPath": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\myBank\\myBank.csproj",
         "packagesPath": "C:\\Users\\Virginia Leticia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\mybank\\obj\\",
+        "outputPath": "C:\\Users\\Virginia Leticia\\OneDrive\\Área de Trabalho\\Trabalhos\\ETE\\Tarefas e Trabalhos\\2021\\Linguagem de Programação\\Bank_OO\\myBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
