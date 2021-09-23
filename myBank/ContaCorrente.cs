@@ -2,6 +2,7 @@ public class ContaCorrente{
     public string Titular { get; set; }
     public int Agencia { get; set; }
     public int Conta { get; set; }
+    public static int TotaldeContasCriadas{get; set;}
     private double _saldo;
     public double Saldo { 
         get{
@@ -16,12 +17,13 @@ public class ContaCorrente{
 
     public ContaCorrente() {}
 
-    public ContaCorrente(string titular, int agencia,/*  int conta, */ double saldo)
+    public ContaCorrente(string titular, int agencia, double saldo)
     {
         this.Titular = titular;
         this.Agencia = agencia;
-        /* this.Conta = conta; */
         this.Saldo = saldo;
+
+        TotaldeContasCriadas ++;
     }
 
     public bool Sacar(double valor){

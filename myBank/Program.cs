@@ -6,14 +6,17 @@ namespace myBank
     {
         static void Main(string[] args)
         {
-            ContaCorrente contaDaVirginia = new ContaCorrente("Virginia", 1234, /* 789, */ 100.50);
+            ContaCorrente contaDaVirginia = new ContaCorrente("Virginia", 1234, 100.50);
+            contaDaVirginia.Conta = 789;
             
-            ContaCorrente contaDoMateus = new ContaCorrente("Mateus", 1234, /* 790, */ 120);
+            ContaCorrente contaDoMateus = new ContaCorrente("Mateus", 1234, 120);
 
-            ContaCorrente contaDoJonatan = new ContaCorrente("Jonatan", 5678, /* 312, */ 15234.89);
+            ContaCorrente contaDoJonatan = new ContaCorrente("Jonatan", 5678, 15234.89);
             
             contaDaVirginia.Sacar(50);
             Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.Saldo);
+
+            Console.WriteLine("O total de contas criadas é: "+ ContaCorrente.TotaldeContasCriadas);
 
             /* contaDaVirginia.Depositar(100);
             Console.WriteLine("O saldo da conta da Virginia é: "+ contaDaVirginia.Saldo);
