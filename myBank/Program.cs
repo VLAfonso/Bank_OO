@@ -6,17 +6,21 @@ namespace myBank
     {
         static void Main(string[] args)
         {
-            Funcionario funcionarioGabriel = new Funcionario();
-            funcionarioGabriel.Nome = "Gabriel";
-            funcionarioGabriel.CPF = "123.456.789-00";
-            funcionarioGabriel.Cargo = "Vendedor";
-            funcionarioGabriel.Salario = 1000;
-            
-            Funcionario funcionarioFelipe = new Funcionario();
-            funcionarioFelipe.Nome = "Felipe";
-            funcionarioFelipe.CPF = "098.765.432-10";
-            funcionarioFelipe.Cargo = "Vendedor";
-            funcionarioFelipe.Salario = 1000;
+            Funcionario funcionarioGabriel = new Funcionario(){
+                Nome = "Gabriel",
+                CPF = "123.456.789-00",
+                Cargo = "Vendedor",
+                Salario = 1000,
+            };
+                    
+            Funcionario funcionarioFelipe = new Funcionario(){
+                Nome = "Felipe",
+                CPF = "098.765.432-10",
+                Cargo = "Vendedor",
+                Salario = 1000,
+            };
+
+            funcionarioFelipe.Bonificacao = funcionarioFelipe.Salario;
 
             ContaCorrente contaDaVirginiaLeticiaAfonso = new ContaCorrente("Virginia Leticia Afonso", 1234, 1000, funcionarioFelipe);
             contaDaVirginiaLeticiaAfonso.Conta = 789;
@@ -31,8 +35,8 @@ namespace myBank
             Console.WriteLine("\nConta 3:\nNome: "+contaDoJonatan.Titular+"\nAgência: "+contaDoJonatan.Agencia+"\nSaldo: "+contaDoJonatan.Saldo);
 
             Console.WriteLine("\nOs funcinários são:");
-            Console.WriteLine("Funcionario 1:\nNome: "+funcionarioGabriel.Nome+"\nCPF: "+funcionarioGabriel.CPF+"\nCargo: "+funcionarioGabriel.Cargo+"\nSalário: "+funcionarioGabriel.Salario+"\nComissão: "+funcionarioGabriel.Comissao);
-            Console.WriteLine("\nFuncionario 2:\nNome: "+funcionarioFelipe.Nome+"\nCPF: "+funcionarioFelipe.CPF+"\nCargo: "+funcionarioFelipe.Cargo+"\nSalário: "+funcionarioFelipe.Salario+"\nComissão: "+funcionarioFelipe.Comissao);
+            Console.WriteLine("Funcionario 1:\nNome: "+funcionarioGabriel.Nome+"\nCPF: "+funcionarioGabriel.CPF+"\nCargo: "+funcionarioGabriel.Cargo+"\nSalário: "+funcionarioGabriel.Salario+"\nComissão: "+funcionarioGabriel.Comissao+"\nBonificação: "+funcionarioGabriel.Bonificacao);
+            Console.WriteLine("\nFuncionario 2:\nNome: "+funcionarioFelipe.Nome+"\nCPF: "+funcionarioFelipe.CPF+"\nCargo: "+funcionarioFelipe.Cargo+"\nSalário: "+funcionarioFelipe.Salario+"\nComissão: "+funcionarioFelipe.Comissao+"\nBonificação: "+funcionarioFelipe.Bonificacao);
 
             Console.WriteLine("\nSacar R$100,00 da conta do Jonatan.");
             contaDoJonatan.Sacar(100);
