@@ -37,14 +37,36 @@ namespace myBank
             contaDoJonatan.Conta = 123;
 
             Console.WriteLine("As contas são:");
-            Console.WriteLine("Conta 1:\nNome: "+contaDaVirginiaLeticiaAfonso.Titular+"\nAgência: "+contaDaVirginiaLeticiaAfonso.Agencia+"\nSaldo: "+contaDaVirginiaLeticiaAfonso.Saldo);
-            Console.WriteLine("\nConta 2:\nNome: "+contaDoMateus.Titular+"\nAgência: "+contaDoMateus.Agencia+"\nSaldo: "+contaDoMateus.Saldo);
-            Console.WriteLine("\nConta 3:\nNome: "+contaDoJonatan.Titular+"\nAgência: "+contaDoJonatan.Agencia+"\nSaldo: "+contaDoJonatan.Saldo);
+            Console.WriteLine("Conta 1:\nNome: "+contaDaVirginiaLeticiaAfonso.Titular+
+            "\nAgência: "+contaDaVirginiaLeticiaAfonso.Agencia+
+            "\nSaldo: "+contaDaVirginiaLeticiaAfonso.Saldo);
+
+            Console.WriteLine("\nConta 2:\nNome: "+contaDoMateus.Titular+
+            "\nAgência: "+contaDoMateus.Agencia+
+            "\nSaldo: "+contaDoMateus.Saldo);
+
+            Console.WriteLine("\nConta 3:\nNome: "+contaDoJonatan.Titular+
+            "\nAgência: "+contaDoJonatan.Agencia+
+            "\nSaldo: "+contaDoJonatan.Saldo);
 
             Console.WriteLine("\nOs funcinários são:");
-            Console.WriteLine("Funcionario 1:\nNome: "+vendedorGabriel.Nome+"\nCPF: "+vendedorGabriel.CPF+"\nSalário: "+vendedorGabriel.Salario+"\nComissão: "+vendedorGabriel.Comissao+"\nBonificação: "+vendedorGabriel.Bonificacao+"\nDias de férias: "+vendedorGabriel.CalcularFerias());
-            Console.WriteLine("\nFuncionario 2:\nNome: "+vendedorFelipe.Nome+"\nCPF: "+vendedorFelipe.CPF+"\nSalário: "+vendedorFelipe.Salario+"\nComissão: "+vendedorFelipe.Comissao+"\nBonificação: "+vendedorFelipe.Bonificacao+"\nDias de férias: "+vendedorFelipe.CalcularFerias());
-            Console.WriteLine("\nGerente:\nNome: "+gerenteCarlosDaniel.Nome+"\nCPF: "+gerenteCarlosDaniel.CPF+"\nSalário: "+gerenteCarlosDaniel.Salario+"\nComissão: "+gerenteCarlosDaniel.Comissao+"\nBonificação: "+gerenteCarlosDaniel.Bonificacao+"\nDias de férias: "+gerenteCarlosDaniel.CalcularFerias());
+            Console.WriteLine("Funcionario 1:\nNome: "+vendedorGabriel.Nome+
+            "\nCPF: "+vendedorGabriel.CPF+"\nSalário: "+vendedorGabriel.Salario+
+            "\nComissão: "+vendedorGabriel.Comissao+"\nBonificação: "+vendedorGabriel.Bonificacao+
+            "\nDias de férias: "+vendedorGabriel.CalcularFerias()+
+            "\nRemuneração total: "+vendedorGabriel.RemuneracaoTotal(vendedorGabriel.Salario));
+
+            Console.WriteLine("\nFuncionario 2:\nNome: "+vendedorFelipe.Nome+
+            "\nCPF: "+vendedorFelipe.CPF+"\nSalário: "+vendedorFelipe.Salario+
+            "\nComissão: "+vendedorFelipe.Comissao+"\nBonificação: "+vendedorFelipe.Bonificacao+
+            "\nDias de férias: "+vendedorFelipe.CalcularFerias()+
+            "\nRemuneração total: "+vendedorFelipe.RemuneracaoTotal(vendedorFelipe.Salario, vendedorFelipe.Bonificacao));
+
+            Console.WriteLine("\nGerente:\nNome: "+gerenteCarlosDaniel.Nome+
+            "\nCPF: "+gerenteCarlosDaniel.CPF+"\nSalário: "+gerenteCarlosDaniel.Salario+
+            "\nComissão: "+gerenteCarlosDaniel.Comissao+"\nBonificação: "+gerenteCarlosDaniel.Bonificacao+
+            "\nDias de férias: "+gerenteCarlosDaniel.CalcularFerias()+
+            "\nRemuneração total: "+gerenteCarlosDaniel.RemuneracaoTotal(gerenteCarlosDaniel.Salario));
 
             Console.WriteLine("\nSacar R$100,00 da conta do Jonatan.");
             contaDoJonatan.Sacar(100);

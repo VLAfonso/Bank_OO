@@ -1,4 +1,4 @@
-public abstract class Funcionario{
+public abstract class Funcionario : PessoaFisica{
     public string Nome { get; set; }
     public string CPF { get; set; }
     public double Salario { get; set; }
