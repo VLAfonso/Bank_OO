@@ -13,4 +13,14 @@ public abstract class Funcionario{
             _bonificacao += Salario * 0.01;
         } 
     }
+
+    public abstract int CalcularFerias();
+
+    public double RemuneracaoTotal(double Salario){
+        return Salario * 12 + Salario;
+    }
+
+    public double RemuneracaoTotal(double Salario, double Bonificacao){
+        return Salario * 12 + Salario + Bonificacao;
+    }
 }
